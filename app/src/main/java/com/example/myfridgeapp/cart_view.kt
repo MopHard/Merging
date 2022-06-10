@@ -31,39 +31,6 @@ class cart_view : AppCompatActivity() {
         init()
     }
 
-    var message = " 제품의 유통기한이 곧 만료됩니다!!!!!! \n확인해보세요!"
-
-    fun makeNotification(pname:String){
-        val id = "MyChannel"
-        val name = "TimeCheckChannel"
-
-        val notificationChannel = NotificationChannel(id,name, NotificationManager.IMPORTANCE_DEFAULT)
-        notificationChannel.enableVibration(true)
-        notificationChannel.enableLights(true)
-        notificationChannel.lightColor = Color.BLUE
-        notificationChannel.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
-
-        val builder = NotificationCompat.Builder(this,id)
-            .setSmallIcon(R.drawable.ic_baseline_access_alarm_24)
-            .setContentTitle("유통기한 만기 알림")
-            .setContentText(pname+message)
-            .setAutoCancel(true)
-
-        val intent = Intent(this,cart_view::class.java)
-        intent.putExtra("time",message)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
-
-        val pendingIntent = PendingIntent.getActivity(this,
-            1,intent, PendingIntent.FLAG_UPDATE_CURRENT)
-        builder.setContentIntent(pendingIntent)
-
-        val notification = builder.build()
-
-        val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        manager.createNotificationChannel(notificationChannel)
-        manager.notify(10,notification)
-    }
-
     private fun init() {
         myCartDBHelper = MyCartDBHelper(this)
         //myCartDBHelper.insertProduct(CartData(0,"당근",20))
