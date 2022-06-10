@@ -42,9 +42,15 @@
         <entry key="..\:/mobile_programming_silseb_src/myfridgeapp/app/src/main/res/layout/item_list.xml" value="0.4528302049755674" />
         <entry key="..\:/mobile_programming_silseb_src/myfridgeapp/app/src/main/res/layout/shelf_item_list.xml" value="0.4528302049755674" />
         <entry key="app/src/main/res/drawable/back.xml" value="0.234" />
+        <entry key="app/src/main/res/drawable/btnborder.xml" value="0.4695" />
         <entry key="app/src/main/res/drawable/ic_baseline_access_alarm_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.4695" />
         <entry key="app/src/main/res/drawable/imageborder.xml" value="0.508" />
         <entry key="app/src/main/res/drawable/recyclerViewBorder.xml" value="0.508" />
+        <entry key="app/src/main/res/drawable/recyclerviewborder.xml" value="0.328" />
+        <entry key="app/src/main/res/drawable/rounded_btn.xml" value="0.328" />
+        <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.4695" />
+        <entry key="app/src/main/res/drawable/search_edittext.xml" value="0.4695" />
         <entry key="app/src/main/res/layout/activity_add_fridge.xml" value="0.3729166666666667" />
         <entry key="app/src/main/res/layout/activity_barcode_scan.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/layout/activity_first_launch.xml" value="0.3729166666666667" />

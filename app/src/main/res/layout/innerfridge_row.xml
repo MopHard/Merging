@@ -30,8 +30,7 @@
             android:visibility="gone"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/chocolate" />
+            android:layout_gravity="center"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

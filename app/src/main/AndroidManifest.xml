@@ -22,9 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFridgeApp"
         tools:targetApi="30">
-        <activity
-            android:name=".popupDialog"
-            android:exported="false" />
+
         <activity
             android:name=".ProductInfo"
             android:exported="true"></activity>
@@ -40,9 +38,7 @@
         <activity
             android:name=".cart_view"
             android:exported="false" />
-        <activity
-            android:name=".shelf_item_list"
-            android:exported="false" />
+
         <activity
             android:name=".BarcodeScan"
             android:exported="false" />
